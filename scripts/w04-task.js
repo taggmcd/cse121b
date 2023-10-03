@@ -29,8 +29,10 @@ myProfile.placesLived.push(
 document.querySelector("#name").textContent = myProfile.name;
 
 /* Photo with attributes */
-document.querySelector("#photo").src = myProfile.photo;
-document.querySelector("#photo").alt = myProfile.name;
+let imageElement = document.querySelector("#photo");
+
+imageElement.setAttribute("src", myProfile.photo);
+imageElement.setAttribute("alt", myProfile.name);
 
 /* Favorite Foods List*/
 myProfile.favoriteFoods.forEach((food) => {
@@ -63,5 +65,5 @@ let esomeprazole = {
   amountType: "ct",
   expDate: "10/01/2021",
 };
-let dose = esomeprazole.amount;
+let dose = esomeprazole["amount"];
 console.log(dose);
