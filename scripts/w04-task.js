@@ -3,7 +3,7 @@
 /* Profile Object  */
 let myProfile = {
   name: "Tagg McDonald",
-  photo: "/images/profile.webp",
+  photo: "images/profile.webp",
   favoriteFoods: ["Smoked Brisket", "Ribs", "Sushi"],
   hobbies: ["Mountain Biking", "Programming", "Hiking"],
   placesLived: [],
@@ -56,3 +56,12 @@ myProfile.placesLived.forEach((place) => {
   document.querySelector("#places-lived").appendChild(dt);
   document.querySelector("#places-lived").appendChild(dd);
 });
+
+let esomeprazole = {
+  id: "mnb78932",
+  amount: 23145,
+  amountType: "ct",
+  expDate: "10/01/2021",
+};
+let dose = esomeprazole.amount;
+console.log(dose);
