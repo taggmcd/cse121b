@@ -2,7 +2,7 @@
 import humanReadable from "./time.js";
 
 // Global vars
-const jsonUrl = "https://kontests.net/api/v1/all";
+const jsonUrl = "https://kontests.net/api/v1/all"; // This endpoint does not end in json but it does return json content
 let contests = null;
 const contestsElement = document.getElementById("contests");
 let contestsList = [];
